@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Café</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
 </head>
 <body>
     <header id="navbar">
@@ -18,7 +20,7 @@
             <p class="important">KAWA</p>
         </li>
         <li class="navbar-item">
-            <a>Produits</a>
+            <a href="#contact">Contact</a>
         </li>
         <li class="navbar-item">
             <a>Histoire</a>
@@ -75,6 +77,93 @@
         </div>
 
     </section>
+    
+    <section id="contact">
+        <h2>Contact</h2>
+        <h3>Nous avons besoin de quelques informations :</h3>
+        <form class="infos" id="infos">
+            <!-- <div class="inputs-wrapper">
+                <input type="text" class="input">
+                <span class="input textarea" id="name" name="name" role="textbox" placeholder="" contenteditable></span>
+                <label for="name">Votre nom</label>
+            </div>
+            <div class="inputs-wrapper">
+                <input type="text" id="reason" class="input"></input>
+                <label for="reason">Pourquoi vous contactez nous ?</label>
+            </div> -->
+            <div class="inputs-wrapper">
+                <input type="text" placeholder="Nom">
+                <input type="text" id="open-calendar" placeholder="Date">
+                <div class="calendar-wrapper">
+                    <div class="calendar">
+                        <div class="calendar-header">
+                            <div class="calendar-header-container">
+                                <div class="nav-buttons">
+                                    <button class="nav-btn" id="previous-month"><i class="fas fa-chevron-left"></i></button>
+                                    <button class="nav-btn" id="next-month"><i class="fas fa-chevron-right"></i></button>
+                                </div>
+                                <div class="month-year" id="month-year">January 2025</div>
+                            </div>
+
+                            <div class="week-days">
+                                <div class="weekday">Lun</div>
+                                <div class="weekday">Mar</div>
+                                <div class="weekday">Mer</div>
+                                <div class="weekday">Jeu</div>
+                                <div class="weekday">Ven</div>
+                                <div class="weekday">Sam</div>
+                                <div class="weekday">Dim</div>
+                            </div>
+                        </div>
+                        <div class="days" id="days"></div>
+                        <div class="calendar-footer">
+                            <button class="today-btn" id="today-btn"><i class="fa fa-calendar-day"></i> Aujourd'hui</button>
+                            <button class="today-btn" id="confirm">Ok</button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+
+        </form>
+    </section>
+
+    <div class="socials-menu">
+        <div id="social-trigger">
+            <div class="icons-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512.629 512.629" style="enable-background:new 0 0 512.629 512.629;" xml:space="preserve" width="512" height="512" class="icon open-socials" fill="currentColor">
+                    <g>
+                        <path d="M0.006,256.014c-0.218,54.774,44.009,99.354,98.784,99.572c25.226,0.1,49.543-9.416,68-26.612l147.797,66.731   c-1.027,5.526-1.59,11.127-1.685,16.747c-0.174,55.152,44.393,100.002,99.545,100.177s100.002-44.393,100.177-99.545   s-44.393-100.002-99.545-100.177c-32.951-0.104-63.832,16.053-82.534,43.182L191.686,293.39   c9.863-23.816,9.901-50.567,0.107-74.411l138.667-63.019c31.225,45.161,93.148,56.457,138.309,25.232S525.225,88.045,494,42.884   s-93.148-56.457-138.309-25.232c-26.895,18.596-42.926,49.227-42.875,81.925c0.09,5.628,0.661,11.237,1.707,16.768L167.11,183.331   c-39.939-37.503-102.718-35.528-140.221,4.411C9.532,206.228-0.088,230.657,0.006,256.014z"/>
+                    </g>
+                </svg>
+
+            </div>
+
+        </div>
+        <ul class="example-1" id="socials-popup">
+            <li class="icon-content">
+            <a
+                class="link"
+                aria-label="Instagram"
+                href="https://instagram.com/"
+            >
+                <img src="icons/instagram.png">
+            </a>
+            <div class="tooltip">Instagram</div>
+            </li>
+            <li class="icon-content">
+            <a
+                class="link"
+                aria-label="Discord"
+                href="https://www.discord.com/"
+            >
+                <img src="icons/discord.png" alt="Discord">
+            </a>
+            <div class="tooltip">Discord</div>
+
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
